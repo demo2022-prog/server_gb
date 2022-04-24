@@ -1,5 +1,6 @@
 
 #include <iostream>
+#include <cstring>
 
 #include "socket_wrapper/socket_headers.h"
 #include "socket_wrapper/socket_wrapper.h"
