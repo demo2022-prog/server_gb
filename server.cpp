@@ -2,6 +2,7 @@
 #include <time.h>
 #include <thread>
 #include <queue>
+#include <cstring>
 
 #include "socket_wrapper/socket_headers.h"
 #include "socket_wrapper/socket_wrapper.h"
@@ -56,7 +57,7 @@ void th_process(My_Thread * th) {
     std::cout << buffer << std::endl;
     int n = rand()%9 + 1;
     strcat(buffer, std::to_string(n).c_str());
-    Sleep(n * 1000);
+    sleep(n * 1000);
     send(sock, buffer, strlen(buffer), 0);
     th->setNull();
 }

@@ -1,6 +1,7 @@
 #include <iostream>
 #include <sstream>
 #include <time.h>
+#include <cstring>
 
 #include "socket_wrapper/socket_headers.h"
 #include "socket_wrapper/socket_wrapper.h"
